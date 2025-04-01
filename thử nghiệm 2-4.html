@@ -4,7 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Responsive Web Example</title>
-    <link rel="thử nghiệm.css" href="styles.css">
+
+    <style>
+        /* Reset mặc định */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header + Footer */
+        header, footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Bố cục chính */
+        .container {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Menu */
+        .menu {
+            background: #f4f4f4;
+            padding: 15px;
+        }
+
+        .menu ul {
+            list-style: none;
+        }
+
+        .menu ul li {
+            margin: 10px 0;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Nội dung chính */
+        .content {
+            background: #ddd;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .menu {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -23,7 +95,7 @@
         <main class="content">
             <h1>Nội dung chính</h1>
             <p>Đây là trang web responsive với CSS Grid và Media Queries.</p>
-            <img src="https://static.wikia.nocookie.net/spiderman-films/images/f/fe/Spider-Man_%28Andrew_Garfield%29_Profile_Pic.png/revision/latest?cb=20211223001405" alt="Hình minh họa">
+            <img src="https://via.placeholder.com/400" alt="Hình minh họa">
         </main>
     </div>
 
@@ -31,5 +103,6 @@
 
 </body>
 </html>
+
 
 
